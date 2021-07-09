@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
+.h-screen.h-screen {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
 @tailwind utilities;

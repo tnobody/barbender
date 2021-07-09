@@ -1,10 +1,12 @@
+import { dispatch, workingWeightChanged } from "./state";
 import "./style.css";
 
-const state = () => ({
-  availablePlates: [1.25, 2.5, 5, 10, 15, 20, 25],
-  workingWeight: 40,
-  barWeight: 20,
-  get requiredPlates() {
-    return [1, 2, 3];
-  },
-});
+const fix100vh = () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+};
+
+window.addEventListener("resize", fix100vh);
+fix100vh();
+
+dispatch(workingWeightChanged(35));
