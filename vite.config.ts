@@ -13,7 +13,7 @@ export default defineConfig({
         theme_color: "#447857",
         description: "Calculates the plates for a barbell",
         icons: [36, 48, 72, 96, 144, 192, 512].map((s) => ({
-          src: `/public/icons/android/launcher-icon-${s}x${s}.png`,
+          src: `/icons/android/launcher-icon-${s}x${s}.png`,
           type: "image/png",
           sizes: `${s}x${s}`,
         })),
